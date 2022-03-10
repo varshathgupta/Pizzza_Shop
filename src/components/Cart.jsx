@@ -37,7 +37,7 @@ export const CartPrice = styled.p`
 export const CartWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   
   margin: 0 auto;
 `;
