@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import { BsCart } from 'react-icons/bs';
-import Cart from './Cart'
+
 
 
 export const Nav = styled.nav`
@@ -54,12 +54,12 @@ function Navbar()  {
     <>
       <Nav>
         <NavLink to='/'>Varshath's Pizza</NavLink>
-        
-        <NavIcon>
-       
+        <NavLink to='#/cart'>        
+          <NavIcon>
           <Bars />
-         
-        </NavIcon>
+          </NavIcon>
+        </NavLink>
+
       </Nav>
     </>
     

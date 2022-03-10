@@ -101,7 +101,7 @@ display: inline-block;
 border-radius:10px;
 text-decoration: none;
 margin:5px;
-border:none
+border:none;
 text-align: center;
 `;
 export const SubmitCartButton = styled.button`
@@ -112,7 +112,7 @@ display: inline-block;
 border-radius:10px;
 text-decoration: none;
 margin:5px;
-border:none
+border:none;
 text-align: center;
 
 `;

@@ -2,6 +2,7 @@ import React from "react";
 import { useCart} from "react-use-cart"
 import styled from 'styled-components';
 import { Rating } from 'react-simple-star-rating'
+import {Link} from 'react-router-dom'
 
 export const ProductCard = styled.div`
   margin: 0 2rem;
@@ -74,7 +75,7 @@ export default function ItemCard(props) {
       <ProductDesc>{props.dec}</ProductDesc>
       <Rating initialValue={props.rating} />
       <ProductPrice>₹{props.price}</ProductPrice>
-       <ProductButton onClick={() => addItem(props.item)} >{props.button}</ProductButton>
+      <Link to={'#/cart'}><ProductButton onClick={() => addItem(props.item)} >{props.button}</ProductButton></Link>
     </ProductInfo>
   </ProductCard>
   )
