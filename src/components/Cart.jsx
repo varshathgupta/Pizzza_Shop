@@ -90,8 +90,32 @@ padding:5px 10px;
 border: none;
 text-align: center;
 margin-right:5px;
+display: inline-block;
+border-radius:4px;
 `;
+export const RemoveButton = styled.button`
+background:#de1d10;
+color: #fff;
+padding:5px 10px;
+display: inline-block;
+border-radius:10px;
+text-decoration: none;
+margin:5px;
+border:none
+text-align: center;
+`;
+export const SubmitCartButton = styled.button`
+background:#67b52f;
+color: #fff;
+padding:5px 10px;
+display: inline-block;
+border-radius:10px;
+text-decoration: none;
+margin:5px;
+border:none
+text-align: center;
 
+`;
 
 
 
@@ -171,13 +195,13 @@ const Cart = () => {
                         </CartTableData>
                         <cartTableData>
                             
-                            <button
+                            <RemoveButton
                               onClick={() => removeItem(item.id)}
-                              className="btn btn-danger ms-2"
+                              
                             >
                               {" "}
                               Remove{" "}
-                            </button>
+                            </RemoveButton>
                         </cartTableData>
                         
                         
@@ -199,12 +223,12 @@ const Cart = () => {
 
           <CartPrice> Total price: ₹ {cartTotal} </CartPrice>
           <CartBuy >
-            <button onClick={() => emptyCart()} className="btn btn-danger ms-2">
+            <RemoveButton onClick={() => emptyCart()}>
               Clear Cart
-            </button>
-            <button onClick={buy} className="btn btn-success ms-2">
+            </RemoveButton>
+            <SubmitCartButton onClick={buy}>
               Buy Now{" "}
-            </button>
+            </SubmitCartButton>
           </CartBuy>
 
         </CardCard>
